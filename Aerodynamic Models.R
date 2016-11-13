@@ -2,7 +2,7 @@
 ### Functions for Estimating Avian Flight Performance ###
 #########################################################
 
-# These functions use morphometric data to estimate parameters related to flight performance such as the mechanical power required for flight based based on aerodynamic models of flapping flight. The models are based on Pennycuick's "Modeling the flying bird" (2008, Accademic Press) with small modifications explained in Claramunt & Wright (2016). Basic morphometric data required are mass, wingpann, and total wing area. Physical parameters such as gravity and air density have conventional default values but can be changed.
+# These functions use morphometric data to estimate parameters related to flight performance such as the mechanical power required for flight based on aerodynamic models of flapping flight. The models are based on Pennycuick's "Modeling the flying bird" (2008, Accademic Press) with slight modifications explained in Claramunt & Wright (2016). Basic morphometric data required are mass, wingpann, and total wing area. Physical parameters such as gravity and air density have conventional default values but can be changed.
 
 # References #
 
