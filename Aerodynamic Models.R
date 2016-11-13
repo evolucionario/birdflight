@@ -91,17 +91,17 @@ Lift.Drag <- function(m, Awing, B, Abody=0.01*m^(2/3), V=NULL, Cbody=0.1, Cpro=8
 
 # Diffrenreces in flight efficiency among similar sized passerines
 
-Lift.Drag(m=0.017, B=0.324, Awing=0.014) # Barn swallow		
+#Lift.Drag(m=0.017, B=0.324, Awing=0.014) # Barn swallow		
 
-Lift.Drag(m=0.0173, B=0.187, Awing=0.0087) # Rufous spinetail
+#Lift.Drag(m=0.0173, B=0.187, Awing=0.0087) # Rufous spinetail
 	
 
 # Mechanical power as a function of air speed for Anas penelope (Compare with figure 3.5 in Pennycuick, 2008).
 
-plot(8:25, P.mec(m=0.770, Awing=0.0829, B=0.822, V=c(8:25)), type="l", xlim=c(0,25), ylim=c(0,15), yaxs="i", xaxs="i", las=1, xlab="Airspeed m/s", ylab="Power W", lwd=2)
+#plot(8:25, P.mec(m=0.770, Awing=0.0829, B=0.822, V=c(8:25)), type="l", xlim=c(0,25), ylim=c(0,15), yaxs="i", xaxs="i", las=1, xlab="Airspeed m/s", ylab="Power W", lwd=2)
 
-lines(8:25, P.induced(m=0.770, B=0.822, V=8:25), col="blue3", lwd=2)
-lines(8:25, P.parasite(m=0.770, V=8:25), col="red3", lwd=2)
-lines(c(8,25), rep(P.profile(m=0.770, Awing=0.0829, B=0.822),2), col="green4", lwd=2)
-abline(v=V.mp(m= 0.770, B= 0.822), lty="dashed")
+#lines(8:25, P.induced(m=0.770, B=0.822, V=8:25), col="blue3", lwd=2)
+#lines(8:25, P.parasite(m=0.770, V=8:25), col="red3", lwd=2)
+#lines(c(8,25), rep(P.profile(m=0.770, Awing=0.0829, B=0.822),2), col="green4", lwd=2)
+#abline(v=V.mp(m= 0.770, B= 0.822), lty="dashed")
 
