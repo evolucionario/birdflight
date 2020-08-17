@@ -10,5 +10,5 @@ sclaramunt@rom.on.ca
 
 # References #
 
-#Claramunt, S., & N. A. Wright. in press. Using museum specimens to study flight and dispersal. in M. S. Webster (ed.) Emerging Frontiers in Collections-based Ornithological Research: The Extended Specimen. Studies in Avian Biology.
+# Claramunt, S., & N. A. Wright. 2017. Using museum specimens to study flight and dispersal. In: M. S. Webster (ed.) Emerging Frontiers in Collections-based Ornithological research: the Extended Specimen. Studies in Avian Biology 50. American Ornithological Society, Chicago.
 # Pennycuick, C. J. 2008. Modeling the flying bird. Academic Press, Cambridge, MA.
