@@ -1,10 +1,10 @@
 ## Functions for Estimating Avian Flight Performance
 
-by Santiago Claramunt
+Santiago Claramunt
 
-Department of Natural History, Royal Ontario Museum, Toronto.
+Department of Ecology and Evolutionary Biology, University of Toronto, Ontario, Canada.
 
-claramunt.bio@gmail.com
+E-mail: s.claramunt@utoronto.ca
 
 These functions in the R language use morphometric data to estimate parameters related to flight performance such as the mechanical power required for flight based on aerodynamic models of flapping flight. The models are based on Pennycuick's "Modeling the flying bird" (2008, Accademic Press) with slight modifications explained in Claramunt & Wright (2016) and Claramunt (2021). Basic morphometric data required are mass, wingpann, and total wing area. Physical parameters such as gravity and air density have conventional default values but can be changed.
 
