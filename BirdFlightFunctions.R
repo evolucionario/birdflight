@@ -71,8 +71,8 @@ P.profile <- function(m, Awing, B, Abody=0.01*m^(2/3), k=1, Cbody=0.1, Cpro=8.4,
 
 P.mec <- function(V=NULL, m, Awing, B, Abody=0.01*m^(2/3), k=1, Cbody=0.1, Cpro=8.4, rho=1.23, g=9.80665) {
 
-	if(V=="Vmp") V <- V.mp(m=m, B=B, Cbody=Cbody, rho=rho, g=g, k=k)
-	
+	if(any(V)=="Vmp") { V <- V.mp(m=m, B=B, Cbody=Cbody, rho=rho, g=g, k=k) }
+		
 	Pind <- P.induced(m=m, B=B, V=V, k=k)
 	Ppar <- P.parasite(m=m, Abody=Abody, V=V, Cbody=Cbody, rho=rho)
 	Ppro <- P.profile(m=m, Awing=Awing, B=B, Abody=Abody, Cbody=Cbody, Cpro=Cpro, k=k, rho=rho, g=g)
@@ -94,7 +94,7 @@ Velocity.mp <- function(interval=c(0, 50), ...) {
 
 Lift.Drag <- function(V=NULL, m, Awing, B, Abody=0.01*m^(2/3), k=1, Cbody=0.1, Cpro=8.4, rho=1.23, g=9.80665) {
 	
-	if(is.null(V)) V <- V.mp(m=m, B=B, Cbody=Cbody, rho=rho, g=g, k=k)
+	if(any(V)=="Vmp") { V <- V.mp(m=m, B=B, Cbody=Cbody, rho=rho, g=g, k=k) }
 
 	Pind <- P.induced(m=m, B=B, V=V, k=k)
 	Ppar <- P.parasite(m=m, Abody=Abody, V=V, Cbody=Cbody, rho=rho)
@@ -155,9 +155,9 @@ Lift.Drag.max <- function(return="lift.drag", ...) {
 # Lift.Drag(m=0.0173, B=0.187, Awing=0.0087) # Rufous spinetail
 
 
-#plot(2:20, P.mec(m= 0.017, Awing= 0.014, B= 0.324, V=c(2:20)), type="l", xlim=c(0,22), ylim=c(0,.6), yaxs="i", xaxs="i", las=1, xlab="Airspeed m/s", ylab="Power W", col="blue")
+# plot(2:20, P.mec(m= 0.0173, Awing= 0.0087, B= 0.187, V=c(2:20)), type="l", xlim=c(0,22), ylim=c(0,.6), yaxs="i", xaxs="i", las=1, xlab="Airspeed m/s", ylab="Power W", col="red2", lwd=3)
 
-#lines(2:20, P.mec(m= 0.0173, Awing= 0.0087, B= 0.187, V=c(2:20)), col="red")
+# lines(2:20, P.mec(m= 0.017, Awing= 0.014, B= 0.324, V=c(2:20)), col="blue2", lty="dashed", lwd=3)
 
 # plot the maximum range speeds
 #abline(v=V.mr(m= 0.0173, Awing= 0.0087, B=0.187), lty="dashed", col="red")
